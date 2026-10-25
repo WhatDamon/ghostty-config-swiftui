@@ -25,6 +25,17 @@ xcodebuild test -project 'Ghostty Config/Ghostty Config.xcodeproj' \
 python3 -m unittest discover -s 'Ghostty Config/scripts' -p 'test_*.py'
 ```
 
+## Nightly builds
+
+[Download Nightly](https://github.com/WhatDamon/ghostty-config-swiftui/releases/tag/nightly)
+for macOS 14 or later (Apple Silicon and Intel). The app is ad-hoc signed and is
+not Developer ID signed or notarized; macOS Gatekeeper may block the first launch.
+
+GitHub Actions checks licenses, resource regeneration, and native unit tests on
+pull requests and pushes to `main`, then builds a universal Release app. Successful
+`main` builds update the `nightly` tag, prerelease ZIP and SHA-256 checksum. The
+workflow also supports manual runs; PRs and other branches cannot publish Nightly.
+
 ## License and attribution
 
 [Apache License 2.0](LICENSE)

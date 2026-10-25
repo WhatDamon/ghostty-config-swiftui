@@ -1,0 +1,166 @@
+name: macOS CI and Nightly
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Keep a running release upload intact; newer pending main builds replace older ones.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    name: Test and build universal macOS app
+    runs-on: macos-15
+    timeout-minutes: 30
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
+      PROJECT: Ghostty Config/Ghostty Config.xcodeproj
+      SCHEME: Ghostty Config
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Show toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+          python3 --version
+
+      - name: Check licenses and generated resources
+        run: |
+          python3 -m unittest discover -s 'Ghostty Config/scripts' -p 'test_*.py'
+          python3 'Ghostty Config/scripts/sync-web-settings.py'
+          git diff --exit-code
+
+      - name: Run native unit tests
+        run: |
+          xcodebuild test \
+            -project "$PROJECT" -scheme "$SCHEME" \
+            -configuration Debug -destination 'platform=macOS' \
+            -derivedDataPath "$RUNNER_TEMP/ghostty-tests" \
+            -resultBundlePath "$RUNNER_TEMP/UnitTests.xcresult" \
+            -only-testing:Ghostty\ ConfigTests \
+            -parallel-testing-enabled NO \
+            CODE_SIGN_IDENTITY=- CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM= \
+            | tee "$RUNNER_TEMP/unit-tests.log"
+
+      - name: Build universal Release app
+        run: |
+          xcodebuild build \
+            -project "$PROJECT" -scheme "$SCHEME" \
+            -configuration Release -destination 'generic/platform=macOS' \
+            -derivedDataPath "$RUNNER_TEMP/ghostty-release" \
+            ARCHS='arm64 x86_64' ONLY_ACTIVE_ARCH=NO \
+            CURRENT_PROJECT_VERSION="$GITHUB_RUN_NUMBER.$GITHUB_RUN_ATTEMPT" \
+            CODE_SIGN_IDENTITY=- CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM= \
+            | tee "$RUNNER_TEMP/release-build.log"
+
+      - name: Verify and package application
+        run: |
+          app="$RUNNER_TEMP/ghostty-release/Build/Products/Release/Ghostty Config.app"
+          lipo -verify_arch arm64 x86_64 "$app/Contents/MacOS/Ghostty Config"
+          codesign --verify --deep --strict --verbose=2 "$app"
+          for resource in LegalNotices.txt ThemeLicenses.json UpstreamSettings.json; do
+            cmp "Ghostty Config/Ghostty Config/Resources/$resource" "$app/Contents/Resources/$resource"
+          done
+          mkdir -p dist
+          ditto -c -k --sequesterRsrc --keepParent "$app" dist/Ghostty-Config-nightly-universal.zip
+          cd dist
+          shasum -a 256 Ghostty-Config-nightly-universal.zip > SHA256SUMS.txt
+
+      - name: Upload application artifact
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: Ghostty-Config-macOS
+          path: dist/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
+
+      - name: Upload failure diagnostics
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: macOS-failure-diagnostics
+          path: |
+            ${{ runner.temp }}/unit-tests.log
+            ${{ runner.temp }}/release-build.log
+            ${{ runner.temp }}/UnitTests.xcresult
+          retention-days: 7
+
+  nightly:
+    name: Publish Nightly
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Download application artifact
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: Ghostty-Config-macOS
+          path: dist
+
+      - name: Verify download
+        working-directory: dist
+        run: sha256sum --check SHA256SUMS.txt
+
+      - name: Create or update nightly tag and prerelease
+        run: |
+          # An old rerun must never roll nightly back behind the current main commit.
+          main_sha="$(gh api "repos/$GH_REPO/git/ref/heads/main" --jq .object.sha)"
+          if [[ "$main_sha" != "$GITHUB_SHA" ]]; then
+            echo 'Skipping release: this commit is no longer the head of main.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          notes="$RUNNER_TEMP/nightly-notes.md"
+          cat > "$notes" <<EOF
+          Automated development build of the independent, unofficial SwiftUI port.
+
+          - Commit: $GITHUB_SHA
+          - Build: $GITHUB_SERVER_URL/$GH_REPO/actions/runs/$GITHUB_RUN_ID
+          - Requires macOS 14 or later; universal app for Apple Silicon and Intel.
+          - Built with Xcode 26.3; ad-hoc signed, without Developer ID signing or Apple notarization. macOS Gatekeeper may block the first launch.
+
+          Download and unzip \`Ghostty-Config-nightly-universal.zip\`, then move \`Ghostty Config.app\` into Applications. \`SHA256SUMS.txt\` contains the archive checksum.
+
+          This prerelease and its \`nightly\` tag are replaced after successful builds of main.
+          EOF
+
+          if gh api "repos/$GH_REPO/git/ref/tags/nightly" --silent; then
+            gh api --method PATCH "repos/$GH_REPO/git/refs/tags/nightly" \
+              -f sha="$GITHUB_SHA" -F force=true --silent
+          else
+            gh api --method POST "repos/$GH_REPO/git/refs" \
+              -f ref=refs/tags/nightly -f sha="$GITHUB_SHA" --silent
+          fi
+
+          if gh release view nightly > /dev/null 2>&1; then
+            gh release upload nightly dist/Ghostty-Config-nightly-universal.zip dist/SHA256SUMS.txt --clobber
+            gh release edit nightly --title Nightly --notes-file "$notes" --prerelease --latest=false
+          else
+            gh release create nightly dist/Ghostty-Config-nightly-universal.zip dist/SHA256SUMS.txt \
+              --verify-tag --title Nightly --notes-file "$notes" --prerelease --latest=false
+          fi
+
+          echo "Nightly published: $GITHUB_SERVER_URL/$GH_REPO/releases/tag/nightly" >> "$GITHUB_STEP_SUMMARY"
