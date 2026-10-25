@@ -72,7 +72,7 @@ jobs:
       - name: Verify and package application
         run: |
           app="$RUNNER_TEMP/ghostty-release/Build/Products/Release/Ghostty Config.app"
-          lipo -verify_arch arm64 x86_64 "$app/Contents/MacOS/Ghostty Config"
+          lipo "$app/Contents/MacOS/Ghostty Config" -verify_arch arm64 x86_64
           codesign --verify --deep --strict --verbose=2 "$app"
           for resource in LegalNotices.txt ThemeLicenses.json UpstreamSettings.json; do
             cmp "Ghostty Config/Ghostty Config/Resources/$resource" "$app/Contents/Resources/$resource"
