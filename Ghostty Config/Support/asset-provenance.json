@@ -1,0 +1,186 @@
+{
+  "reviewDate": "2026-10-25",
+  "ghosttyLicenseReviewRevision": "cec8b92f1ecd176a20a56aa405021e7ae991b996",
+  "assets": [
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-blueprint.imageset/image.png",
+      "sha256": "316a2be1b9f0209b1af897ead578f1ffd528bc358bd7c660dc59ed93c5c26802",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-chalkboard.imageset/image.png",
+      "sha256": "68bd22297e3efba2f7317a29093b49dae0decd290d734456561ab4d7d5e3a18a",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-crt.imageset/image.png",
+      "sha256": "2f38fc0e1c303339b2532f49c6feca1a06162d2640a9350bff714a66147bc2f1",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-frame-aluminum.imageset/image.png",
+      "sha256": "c8fedcabd96d1d3580b4adb91c59fd4912aedcf2cb751a502488d112b3d09ad1",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-frame-beige.imageset/image.png",
+      "sha256": "a52e016f6381cbfd92cafe65fc72086201d3b2063fd7c13b37b0b5745ba222bb",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-frame-chrome.imageset/image.png",
+      "sha256": "fbc42810c42c23869ad2fabc80399b702486b0b6a3f30a822c9892b0e3e23e49",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-frame-plastic.imageset/image.png",
+      "sha256": "a9b0f1f7b50c5fd4840f535ad6ef108a27286b1993adbc4b984844120d0171ca",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-ghost-mask.imageset/image.png",
+      "sha256": "779087b83f55debaff69805dad4265f9ffa9b19f3a8ac4f592da47b0783922be",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-glass.imageset/image.png",
+      "sha256": "98ca6b579ca7c94f24dc2dbc80d67ff425f390aa3e3b3c2b73d161f0ef17fa48",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-gloss.imageset/image.png",
+      "sha256": "96e566d58ac21fcebf3e0651f6e47906e4887bee2ad0091627dced2e8f09e349",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-holographic.imageset/image.png",
+      "sha256": "a48c375d0ce17bce3ea4b9cc5e0b50de13a1f943d8d792f1b5d0f8d2b3bbbca7",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-microchip.imageset/image.png",
+      "sha256": "2062f3d1b75ece7a64d283e489eaf92c8517ac2960ea13c875be5780048f5e8c",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-official.imageset/image.png",
+      "sha256": "a4597f2fe758e643533b3f55cc144bc872ba1a48cc37f4171370b1a33b6ee0ee",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-paper.imageset/image.png",
+      "sha256": "8eea882fdbe8c80b8f6efa4e8a51cc58f32d713fe05b56da4e9e5b6db4213cc6",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-retro.imageset/image.png",
+      "sha256": "8f0316b5eea3d7cde31123e9445d16a09e40c200d351f13f921f58f549762513",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-screen-mask.imageset/image.png",
+      "sha256": "452d3711a002c902d387db9177b2e3e49c63324247e86d7433cd339732a8f27f",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/Ghostty-xray.imageset/image.png",
+      "sha256": "0fb244c83591c682707c2893d6107c538f60bfe5b2b466b909feb47024c8c948",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "f2eac4de31a8b4eb924850c5f96f4a113c940773",
+      "originalProject": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "licenseFile": "LICENSES/Ghostty-MIT.txt",
+      "modifications": "Repackaged as a native imageset; PNG bytes unchanged from the pinned Web vendor asset."
+    },
+    {
+      "path": "Ghostty Config/Ghostty Config/Assets.xcassets/ConfigLogo.imageset/image.png",
+      "sha256": "3f58810b40d288633c352861e3ebd1548d04e51bc015548c9d8415f684160019",
+      "sourceRepository": "https://github.com/zerebos/ghostty-config",
+      "sourceRevision": "978f809d74e27bc0e93031912d9c35c62b1907b0",
+      "originalPath": "src/lib/images/icon.webp",
+      "license": "Apache-2.0",
+      "licenseFile": "LICENSE",
+      "modifications": "Converted WebP to PNG; resized copies in AppIcon.appiconset."
+    }
+  ]
+}

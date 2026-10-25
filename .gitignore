@@ -1,0 +1,29 @@
+# Local reference implementations, research notes and recovery snapshots
+/.local-reference/
+
+# Xcode / Swift generated output and personal state
+build/
+DerivedData/
+.build/
+.swiftpm/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.hmap
+*.ipa
+*.dSYM/
+
+# Developer tools and OS files
+node_modules/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Local secrets
+.env
+.env.*
+!.env.example
+*.p12
+*.mobileprovision

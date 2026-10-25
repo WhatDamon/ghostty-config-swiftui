@@ -1,0 +1,4 @@
+# Keep upstream legal notices exactly as received, including original line endings.
+LICENSE -text -whitespace
+LICENSES/*.txt -text -whitespace
+"Ghostty Config/Ghostty Config/Resources/LegalNotices.txt" -whitespace

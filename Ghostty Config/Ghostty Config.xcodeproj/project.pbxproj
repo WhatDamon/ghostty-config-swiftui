@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		73BAD71F2FDC1DEC001F7176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73BAD7092FDC1DEB001F7176 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73BAD7102FDC1DEB001F7176;
+			remoteInfo = "Ghostty Config";
+		};
+		73BAD7292FDC1DEC001F7176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73BAD7092FDC1DEB001F7176 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73BAD7102FDC1DEB001F7176;
+			remoteInfo = "Ghostty Config";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		73BAD7112FDC1DEB001F7176 /* Ghostty Config.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ghostty Config.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BAD71E2FDC1DEC001F7176 /* Ghostty ConfigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ghostty ConfigTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BAD7282FDC1DEC001F7176 /* Ghostty ConfigUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ghostty ConfigUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		73BAD7132FDC1DEB001F7176 /* Ghostty Config */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Ghostty Config";
+			sourceTree = "<group>";
+		};
+		73BAD7212FDC1DEC001F7176 /* Ghostty ConfigTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Ghostty ConfigTests";
+			sourceTree = "<group>";
+		};
+		73BAD72B2FDC1DEC001F7176 /* Ghostty ConfigUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Ghostty ConfigUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73BAD70E2FDC1DEB001F7176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BAD71B2FDC1DEC001F7176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BAD7252FDC1DEC001F7176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73BAD7082FDC1DEB001F7176 = {
+			isa = PBXGroup;
+			children = (
+				73BAD7132FDC1DEB001F7176 /* Ghostty Config */,
+				73BAD7212FDC1DEC001F7176 /* Ghostty ConfigTests */,
+				73BAD72B2FDC1DEC001F7176 /* Ghostty ConfigUITests */,
+				73BAD7122FDC1DEB001F7176 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73BAD7122FDC1DEB001F7176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73BAD7112FDC1DEB001F7176 /* Ghostty Config.app */,
+				73BAD71E2FDC1DEC001F7176 /* Ghostty ConfigTests.xctest */,
+				73BAD7282FDC1DEC001F7176 /* Ghostty ConfigUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73BAD7102FDC1DEB001F7176 /* Ghostty Config */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73BAD7322FDC1DEC001F7176 /* Build configuration list for PBXNativeTarget "Ghostty Config" */;
+			buildPhases = (
+				73BAD70D2FDC1DEB001F7176 /* Sources */,
+				73BAD70E2FDC1DEB001F7176 /* Frameworks */,
+				73BAD70F2FDC1DEB001F7176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				73BAD7132FDC1DEB001F7176 /* Ghostty Config */,
+			);
+			name = "Ghostty Config";
+			packageProductDependencies = (
+			);
+			productName = "Ghostty Config";
+			productReference = 73BAD7112FDC1DEB001F7176 /* Ghostty Config.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73BAD71D2FDC1DEC001F7176 /* Ghostty ConfigTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73BAD7352FDC1DEC001F7176 /* Build configuration list for PBXNativeTarget "Ghostty ConfigTests" */;
+			buildPhases = (
+				73BAD71A2FDC1DEC001F7176 /* Sources */,
+				73BAD71B2FDC1DEC001F7176 /* Frameworks */,
+				73BAD71C2FDC1DEC001F7176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73BAD7202FDC1DEC001F7176 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				73BAD7212FDC1DEC001F7176 /* Ghostty ConfigTests */,
+			);
+			name = "Ghostty ConfigTests";
+			packageProductDependencies = (
+			);
+			productName = "Ghostty ConfigTests";
+			productReference = 73BAD71E2FDC1DEC001F7176 /* Ghostty ConfigTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73BAD7272FDC1DEC001F7176 /* Ghostty ConfigUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73BAD7382FDC1DEC001F7176 /* Build configuration list for PBXNativeTarget "Ghostty ConfigUITests" */;
+			buildPhases = (
+				73BAD7242FDC1DEC001F7176 /* Sources */,
+				73BAD7252FDC1DEC001F7176 /* Frameworks */,
+				73BAD7262FDC1DEC001F7176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73BAD72A2FDC1DEC001F7176 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				73BAD72B2FDC1DEC001F7176 /* Ghostty ConfigUITests */,
+			);
+			name = "Ghostty ConfigUITests";
+			packageProductDependencies = (
+			);
+			productName = "Ghostty ConfigUITests";
+			productReference = 73BAD7282FDC1DEC001F7176 /* Ghostty ConfigUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73BAD7092FDC1DEB001F7176 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					73BAD7102FDC1DEB001F7176 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					73BAD71D2FDC1DEC001F7176 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 73BAD7102FDC1DEB001F7176;
+					};
+					73BAD7272FDC1DEC001F7176 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 73BAD7102FDC1DEB001F7176;
+					};
+				};
+			};
+			buildConfigurationList = 73BAD70C2FDC1DEB001F7176 /* Build configuration list for PBXProject "Ghostty Config" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73BAD7082FDC1DEB001F7176;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 73BAD7122FDC1DEB001F7176 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73BAD7102FDC1DEB001F7176 /* Ghostty Config */,
+				73BAD71D2FDC1DEC001F7176 /* Ghostty ConfigTests */,
+				73BAD7272FDC1DEC001F7176 /* Ghostty ConfigUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73BAD70F2FDC1DEB001F7176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BAD71C2FDC1DEC001F7176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BAD7262FDC1DEC001F7176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73BAD70D2FDC1DEB001F7176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BAD71A2FDC1DEC001F7176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BAD7242FDC1DEC001F7176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73BAD7202FDC1DEC001F7176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73BAD7102FDC1DEB001F7176 /* Ghostty Config */;
+			targetProxy = 73BAD71F2FDC1DEC001F7176 /* PBXContainerItemProxy */;
+		};
+		73BAD72A2FDC1DEC001F7176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73BAD7102FDC1DEB001F7176 /* Ghostty Config */;
+			targetProxy = 73BAD7292FDC1DEC001F7176 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		73BAD7302FDC1DEC001F7176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		73BAD7312FDC1DEC001F7176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		73BAD7332FDC1DEC001F7176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Support/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ghostty Config";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Original Web: Copyright 2024 Zerebos. SwiftUI port: Copyright 2026 Damon Lu.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damon233.Ghostty-Config";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		73BAD7342FDC1DEC001F7176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Support/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ghostty Config";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Original Web: Copyright 2024 Zerebos. SwiftUI port: Copyright 2026 Damon Lu.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damon233.Ghostty-Config";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		73BAD7362FDC1DEC001F7176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damon233.Ghostty-ConfigTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ghostty Config.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ghostty Config";
+			};
+			name = Debug;
+		};
+		73BAD7372FDC1DEC001F7176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damon233.Ghostty-ConfigTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ghostty Config.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ghostty Config";
+			};
+			name = Release;
+		};
+		73BAD7392FDC1DEC001F7176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damon233.Ghostty-ConfigUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = "Ghostty Config";
+			};
+			name = Debug;
+		};
+		73BAD73A2FDC1DEC001F7176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damon233.Ghostty-ConfigUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = "Ghostty Config";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73BAD70C2FDC1DEB001F7176 /* Build configuration list for PBXProject "Ghostty Config" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BAD7302FDC1DEC001F7176 /* Debug */,
+				73BAD7312FDC1DEC001F7176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73BAD7322FDC1DEC001F7176 /* Build configuration list for PBXNativeTarget "Ghostty Config" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BAD7332FDC1DEC001F7176 /* Debug */,
+				73BAD7342FDC1DEC001F7176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73BAD7352FDC1DEC001F7176 /* Build configuration list for PBXNativeTarget "Ghostty ConfigTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BAD7362FDC1DEC001F7176 /* Debug */,
+				73BAD7372FDC1DEC001F7176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73BAD7382FDC1DEC001F7176 /* Build configuration list for PBXNativeTarget "Ghostty ConfigUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BAD7392FDC1DEC001F7176 /* Debug */,
+				73BAD73A2FDC1DEC001F7176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73BAD7092FDC1DEB001F7176 /* Project object */;
+}

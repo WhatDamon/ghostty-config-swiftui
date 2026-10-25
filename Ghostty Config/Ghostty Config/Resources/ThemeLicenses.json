@@ -1,0 +1,633 @@
+{
+  "schemaVersion": 1,
+  "policy": "Only explicitly reviewed MIT theme sources. Excluded themes have no bundled colors or generated picker options.",
+  "reviewDate": "2026-10-25",
+  "webSource": {
+    "repository": "https://github.com/zerebos/ghostty-config",
+    "revision": "f2eac4de31a8b4eb924850c5f96f4a113c940773"
+  },
+  "collectionSource": {
+    "repository": "https://github.com/mbadolato/iTerm2-Color-Schemes",
+    "license": "MIT",
+    "licenseFile": "LICENSES/iTerm2-Color-Schemes-MIT.txt",
+    "reviewRevision": "04a98db045eb5d71c2247ca6c050ab97290d081c",
+    "note": "Collection MIT does not replace each individual author license. Original colors were converted by the pinned Web source; license evidence was independently retrieved from the theme source projects."
+  },
+  "sources": [
+    {
+      "repository": "EdenEast/nightfox.nvim",
+      "revision": "4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/EdenEast/nightfox.nvim/4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a/LICENSE",
+      "licenseSHA256": "280a27a527db4e93e03d525a1226ee66ca96a2cbaedb3517eccfba40ac0d7a9f",
+      "licenseFile": "LICENSES/EdenEast--nightfox.nvim-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2021 James Simpson"
+      ]
+    },
+    {
+      "repository": "catppuccin/palette",
+      "revision": "07d02aa110ef9eb7e7427afca5c73ba9cf7f8ebd",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/catppuccin/palette/07d02aa110ef9eb7e7427afca5c73ba9cf7f8ebd/LICENSE",
+      "licenseSHA256": "814096d2c34cc216c624738a49356f32b7237733b4f7edb0685f4e50ef5074ba",
+      "licenseFile": "LICENSES/catppuccin--palette-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2021 Catppuccin"
+      ]
+    },
+    {
+      "repository": "zenbones-theme/zenbones.nvim",
+      "revision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/zenbones-theme/zenbones.nvim/8304d8df9b823ff11e103afa62f38c39f534abe6/LICENSE",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2022 Michael Chris Lopez"
+      ]
+    },
+    {
+      "repository": "sainnhe/gruvbox-material",
+      "revision": "11d779b26a9ab2b3db8c22c6ac9fb6e8ed4fea79",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/sainnhe/gruvbox-material/11d779b26a9ab2b3db8c22c6ac9fb6e8ed4fea79/LICENSE",
+      "licenseSHA256": "1578c1d9fe713f0ee479ff822b82baddbd2dfecf1f247a3f72bbdae5e0162e7e",
+      "licenseFile": "LICENSES/sainnhe--gruvbox-material-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2020 sainnhe"
+      ]
+    },
+    {
+      "repository": "sainnhe/sonokai",
+      "revision": "b023c5280b16fe2366f5e779d8d2756b3e5ee9c3",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/sainnhe/sonokai/b023c5280b16fe2366f5e779d8d2756b3e5ee9c3/LICENSE",
+      "licenseSHA256": "1578c1d9fe713f0ee479ff822b82baddbd2dfecf1f247a3f72bbdae5e0162e7e",
+      "licenseFile": "LICENSES/sainnhe--sonokai-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2020 sainnhe"
+      ]
+    },
+    {
+      "repository": "rose-pine/build",
+      "revision": "1111ed6c610e13eeec99a5112aa937942f663b1d",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/rose-pine/build/1111ed6c610e13eeec99a5112aa937942f663b1d/LICENSE",
+      "licenseSHA256": "0e691132d5d92a848a1688b90fd4c662f62f78f3bd550ba46826ec31ec98fc70",
+      "licenseFile": "LICENSES/rose-pine--build-MIT.txt",
+      "copyright": [
+        "Copyright (c) mvllow"
+      ]
+    },
+    {
+      "repository": "rebelot/kanagawa.nvim",
+      "revision": "bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/rebelot/kanagawa.nvim/bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3/LICENSE",
+      "licenseSHA256": "dfce81e2e5bf5b5b1b440269abc551ddf96a673be9fdf64f082d5802787a4b04",
+      "licenseFile": "LICENSES/rebelot--kanagawa.nvim-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2021 Tommaso Laurenzi"
+      ]
+    },
+    {
+      "repository": "kepano/flexoki",
+      "revision": "8d723bac4a9ac46adfdf99d42155286977aac72a",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/kepano/flexoki/8d723bac4a9ac46adfdf99d42155286977aac72a/LICENSE",
+      "licenseSHA256": "b0aeda2f9ebf5e09c6bfbf9323813ebeaedeabcc8cb441323c9f47aef9b05ba3",
+      "licenseFile": "LICENSES/kepano--flexoki-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2023 Steph Ango"
+      ]
+    },
+    {
+      "repository": "sonph/onehalf",
+      "revision": "75eb2e97acd74660779fed8380989ee7891eec56",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/sonph/onehalf/75eb2e97acd74660779fed8380989ee7891eec56/LICENSE.txt",
+      "licenseSHA256": "bb4a23db094e79ed8ffd9a38fbc6ff45cbdf9a1f4182fc7ff2667793a012c9a1",
+      "licenseFile": "LICENSES/sonph--onehalf-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2019 Son A. Pham <sp@sonpham.me>"
+      ]
+    },
+    {
+      "repository": "chriskempson/tomorrow-theme",
+      "revision": "ccf6666d888198d341b26b3a99d0bc96500ad503",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/chriskempson/tomorrow-theme/ccf6666d888198d341b26b3a99d0bc96500ad503/LICENSE.md",
+      "licenseSHA256": "a9773fd575f48ea3648b54eeaf09d1512a9f0c7c20d284dc3f8295bd92123bf9",
+      "licenseFile": "LICENSES/chriskempson--tomorrow-theme-MIT.txt",
+      "copyright": [
+        "Copyright (C) 2011 [Chris Kempson](https://github.com/chriskempson)"
+      ]
+    },
+    {
+      "repository": "cocopon/iceberg.vim",
+      "revision": "23835d5ed696436f716cbfdb56a93a7850fe3b18",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/cocopon/iceberg.vim/23835d5ed696436f716cbfdb56a93a7850fe3b18/LICENSE.txt",
+      "licenseSHA256": "2a097c66a9be7645245c475e41afd60e646a769589f728e0184cca3127a67486",
+      "licenseFile": "LICENSES/cocopon--iceberg.vim-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2014 cocopon <cocopon@me.com>"
+      ]
+    },
+    {
+      "repository": "sindresorhus/iterm2-snazzy",
+      "revision": "27b3156992a87ccb36c44448592e85da70f61acc",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/sindresorhus/iterm2-snazzy/27b3156992a87ccb36c44448592e85da70f61acc/license",
+      "licenseSHA256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3",
+      "licenseFile": "LICENSES/sindresorhus--iterm2-snazzy-MIT.txt",
+      "copyright": [
+        "Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)"
+      ]
+    },
+    {
+      "repository": "raunofreiberg/vesper",
+      "revision": "9043f3849b776949445f0cd4990365959cca35a3",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/raunofreiberg/vesper/9043f3849b776949445f0cd4990365959cca35a3/LICENSE.md",
+      "licenseSHA256": "c44ea9c10305dd82182e64c1431b678871562150a1439ccdb9484728dd536099",
+      "licenseFile": "LICENSES/raunofreiberg--vesper-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2023 Rauno Freiberg"
+      ]
+    },
+    {
+      "repository": "microsoft/vscode",
+      "revision": "ed40651055dc41f4cc669f33016b7724b78bb3b4",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/microsoft/vscode/ed40651055dc41f4cc669f33016b7724b78bb3b4/LICENSE.txt",
+      "licenseSHA256": "9480271317925265e806a9a196aaa33410a962fa9d4d1e248a4a5187bc8c9df9",
+      "licenseFile": "LICENSES/microsoft--vscode-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2015 - present Microsoft Corporation"
+      ]
+    },
+    {
+      "repository": "primer/github-vscode-theme",
+      "revision": "cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf",
+      "license": "MIT",
+      "licenseURL": "https://raw.githubusercontent.com/primer/github-vscode-theme/cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf/LICENSE",
+      "licenseSHA256": "e2c871bb6effe9f6ec8d94d6596db33c4bfe4dd94969a6a9a2fb0473ebe6442e",
+      "licenseFile": "LICENSES/primer--github-vscode-theme-MIT.txt",
+      "copyright": [
+        "Copyright (c) 2020 Primer"
+      ]
+    }
+  ],
+  "themes": {
+    "Carbonfox": {
+      "license": "MIT",
+      "repository": "https://github.com/EdenEast/nightfox.nvim",
+      "licenseRevision": "4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a",
+      "licenseFile": "LICENSES/EdenEast--nightfox.nvim-MIT.txt",
+      "licenseSHA256": "280a27a527db4e93e03d525a1226ee66ca96a2cbaedb3517eccfba40ac0d7a9f",
+      "colorsSHA256": "d00fafdb92be5ab35aa844556838754cac7cc5cf8abf9f6574251069a64cb749"
+    },
+    "Dawnfox": {
+      "license": "MIT",
+      "repository": "https://github.com/EdenEast/nightfox.nvim",
+      "licenseRevision": "4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a",
+      "licenseFile": "LICENSES/EdenEast--nightfox.nvim-MIT.txt",
+      "licenseSHA256": "280a27a527db4e93e03d525a1226ee66ca96a2cbaedb3517eccfba40ac0d7a9f",
+      "colorsSHA256": "18cac9c6ff35d94a0e05b38cd1f7daa24851e3779b831272fc934cee12eb0cbe"
+    },
+    "Dayfox": {
+      "license": "MIT",
+      "repository": "https://github.com/EdenEast/nightfox.nvim",
+      "licenseRevision": "4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a",
+      "licenseFile": "LICENSES/EdenEast--nightfox.nvim-MIT.txt",
+      "licenseSHA256": "280a27a527db4e93e03d525a1226ee66ca96a2cbaedb3517eccfba40ac0d7a9f",
+      "colorsSHA256": "156389c90dad61ad2751fc5aa65fd39d3fccfe31ae0d7a8635b066ad4db25f44"
+    },
+    "Duskfox": {
+      "license": "MIT",
+      "repository": "https://github.com/EdenEast/nightfox.nvim",
+      "licenseRevision": "4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a",
+      "licenseFile": "LICENSES/EdenEast--nightfox.nvim-MIT.txt",
+      "licenseSHA256": "280a27a527db4e93e03d525a1226ee66ca96a2cbaedb3517eccfba40ac0d7a9f",
+      "colorsSHA256": "be135f7c6600e1db5cc9a382ff8592c80014331a8eccfa70e55dd055535fc040"
+    },
+    "Nightfox": {
+      "license": "MIT",
+      "repository": "https://github.com/EdenEast/nightfox.nvim",
+      "licenseRevision": "4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a",
+      "licenseFile": "LICENSES/EdenEast--nightfox.nvim-MIT.txt",
+      "licenseSHA256": "280a27a527db4e93e03d525a1226ee66ca96a2cbaedb3517eccfba40ac0d7a9f",
+      "colorsSHA256": "d8a9a0e8901b020e9d3934dbe03371666e0227ea673b765fd1b368305b6c78a4"
+    },
+    "Nordfox": {
+      "license": "MIT",
+      "repository": "https://github.com/EdenEast/nightfox.nvim",
+      "licenseRevision": "4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a",
+      "licenseFile": "LICENSES/EdenEast--nightfox.nvim-MIT.txt",
+      "licenseSHA256": "280a27a527db4e93e03d525a1226ee66ca96a2cbaedb3517eccfba40ac0d7a9f",
+      "colorsSHA256": "0a5cc690f29a379c51a309006e8330e095231c5a92a1fc6970e83c4493a417b5"
+    },
+    "Terafox": {
+      "license": "MIT",
+      "repository": "https://github.com/EdenEast/nightfox.nvim",
+      "licenseRevision": "4dacd3f0185a2227bdf3b6c0975a8f0bf87cac9a",
+      "licenseFile": "LICENSES/EdenEast--nightfox.nvim-MIT.txt",
+      "licenseSHA256": "280a27a527db4e93e03d525a1226ee66ca96a2cbaedb3517eccfba40ac0d7a9f",
+      "colorsSHA256": "87c2314ffab95abf98a1000238a5dd72e23d5b4bcfc229bffbbf2778be86e2b2"
+    },
+    "Catppuccin Frappe": {
+      "license": "MIT",
+      "repository": "https://github.com/catppuccin/palette",
+      "licenseRevision": "07d02aa110ef9eb7e7427afca5c73ba9cf7f8ebd",
+      "licenseFile": "LICENSES/catppuccin--palette-MIT.txt",
+      "licenseSHA256": "814096d2c34cc216c624738a49356f32b7237733b4f7edb0685f4e50ef5074ba",
+      "colorsSHA256": "c4d3b7c6ee544de1b13b7588adf46af0c467a8c6072a489b8e2c9f8bdff07406"
+    },
+    "Catppuccin Latte": {
+      "license": "MIT",
+      "repository": "https://github.com/catppuccin/palette",
+      "licenseRevision": "07d02aa110ef9eb7e7427afca5c73ba9cf7f8ebd",
+      "licenseFile": "LICENSES/catppuccin--palette-MIT.txt",
+      "licenseSHA256": "814096d2c34cc216c624738a49356f32b7237733b4f7edb0685f4e50ef5074ba",
+      "colorsSHA256": "37f54816416adde38fd360d213b1061b3b98ba62d34ac7b683024b0d0c883c78"
+    },
+    "Catppuccin Macchiato": {
+      "license": "MIT",
+      "repository": "https://github.com/catppuccin/palette",
+      "licenseRevision": "07d02aa110ef9eb7e7427afca5c73ba9cf7f8ebd",
+      "licenseFile": "LICENSES/catppuccin--palette-MIT.txt",
+      "licenseSHA256": "814096d2c34cc216c624738a49356f32b7237733b4f7edb0685f4e50ef5074ba",
+      "colorsSHA256": "ffb9f6ebc793de866564110b23a2b618002e02924cf7e40e5519e61223da0949"
+    },
+    "Catppuccin Mocha": {
+      "license": "MIT",
+      "repository": "https://github.com/catppuccin/palette",
+      "licenseRevision": "07d02aa110ef9eb7e7427afca5c73ba9cf7f8ebd",
+      "licenseFile": "LICENSES/catppuccin--palette-MIT.txt",
+      "licenseSHA256": "814096d2c34cc216c624738a49356f32b7237733b4f7edb0685f4e50ef5074ba",
+      "colorsSHA256": "9060c833ba5b7c288544f0c10822d39195288c6f4adc9fff623235c107168f0b"
+    },
+    "Duckbones": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "92efdde420f58bd7b84cd792025b5b2224fdd2c560c0f6fb6ed5c59bd12e5257"
+    },
+    "Kanagawabones": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "99a3134db77c23d70704eb9f6be874b4f6d2378e97675c88cb0b456695f92377"
+    },
+    "Neobones Dark": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "6c7118390731775faf6216a4aa86f00cc790c4aec99155a8b9c0a7feccaf566b"
+    },
+    "Neobones Light": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "e6c9a6abb7efcfb498e3c0c63eb3302fdb31331e347010717fce810d95720874"
+    },
+    "Seoulbones Dark": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "aec384bc4ac9db25932a799ba7ab6f5296903b1e05e3d33a9785c6dae0beea3f"
+    },
+    "Seoulbones Light": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "7619ca16498a3fcff5f02caab99b0970d8015b010d086ee8e2453923c9cf5bf9"
+    },
+    "Vimbones": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "c6bac58fd03330019ea56a1fbb88bf9e121fba6c3b1ccc5c45872d358e9c1c93"
+    },
+    "Zenbones": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "6720fa34a27ec82f527cb85a54f598dfa1771dc5ad82c37b0746c98cb93edfa5"
+    },
+    "Zenbones Dark": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "e8b2f121a76d0838a26a793bb917371a7c0f1138adf9890de4d08d3fe12d1b4c"
+    },
+    "Zenbones Light": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "6720fa34a27ec82f527cb85a54f598dfa1771dc5ad82c37b0746c98cb93edfa5"
+    },
+    "Zenburned": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "ca2ff9789eb3ea656d809b9600fb0c80d5d1ced55c610113b46fa750e0787f46"
+    },
+    "Zenwritten Dark": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "a3d6f7ce34e65c408f0b174c829e4052721dd634dca7f58caba13d2854bfbc69"
+    },
+    "Zenwritten Light": {
+      "license": "MIT",
+      "repository": "https://github.com/zenbones-theme/zenbones.nvim",
+      "licenseRevision": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "licenseFile": "LICENSES/zenbones-theme--zenbones.nvim-MIT.txt",
+      "licenseSHA256": "b6da6bf42bdadbc049acc8b32dfee99564e06650886a88a17a9e6f4ea1e96a97",
+      "colorsSHA256": "a9c38e745f043d28454c9b20e69218090492d659f0fd5e991309f641301f1df6"
+    },
+    "Gruvbox Material": {
+      "license": "MIT",
+      "repository": "https://github.com/sainnhe/gruvbox-material",
+      "licenseRevision": "11d779b26a9ab2b3db8c22c6ac9fb6e8ed4fea79",
+      "licenseFile": "LICENSES/sainnhe--gruvbox-material-MIT.txt",
+      "licenseSHA256": "1578c1d9fe713f0ee479ff822b82baddbd2dfecf1f247a3f72bbdae5e0162e7e",
+      "colorsSHA256": "189f934ef06c9060c1993e9917b5a78a97b1832b6863ba873ebe1b9a8854c9dc"
+    },
+    "Gruvbox Material Dark": {
+      "license": "MIT",
+      "repository": "https://github.com/sainnhe/gruvbox-material",
+      "licenseRevision": "11d779b26a9ab2b3db8c22c6ac9fb6e8ed4fea79",
+      "licenseFile": "LICENSES/sainnhe--gruvbox-material-MIT.txt",
+      "licenseSHA256": "1578c1d9fe713f0ee479ff822b82baddbd2dfecf1f247a3f72bbdae5e0162e7e",
+      "colorsSHA256": "eca6cca7b693eff8f0f892410a35c4ff749e79b21be85cea57e82f9f06b6a32a"
+    },
+    "Gruvbox Material Light": {
+      "license": "MIT",
+      "repository": "https://github.com/sainnhe/gruvbox-material",
+      "licenseRevision": "11d779b26a9ab2b3db8c22c6ac9fb6e8ed4fea79",
+      "licenseFile": "LICENSES/sainnhe--gruvbox-material-MIT.txt",
+      "licenseSHA256": "1578c1d9fe713f0ee479ff822b82baddbd2dfecf1f247a3f72bbdae5e0162e7e",
+      "colorsSHA256": "6273efe8c3406d103119a540880a8a1ef503ae89067e9e1b7edaca470642b354"
+    },
+    "Sonokai": {
+      "license": "MIT",
+      "repository": "https://github.com/sainnhe/sonokai",
+      "licenseRevision": "b023c5280b16fe2366f5e779d8d2756b3e5ee9c3",
+      "licenseFile": "LICENSES/sainnhe--sonokai-MIT.txt",
+      "licenseSHA256": "1578c1d9fe713f0ee479ff822b82baddbd2dfecf1f247a3f72bbdae5e0162e7e",
+      "colorsSHA256": "da036d64d5ed17f2b2676a0eca3810241383befd2c8550d4a2d6ab2d490085a9"
+    },
+    "Rose Pine": {
+      "license": "MIT",
+      "repository": "https://github.com/rose-pine/build",
+      "licenseRevision": "1111ed6c610e13eeec99a5112aa937942f663b1d",
+      "licenseFile": "LICENSES/rose-pine--build-MIT.txt",
+      "licenseSHA256": "0e691132d5d92a848a1688b90fd4c662f62f78f3bd550ba46826ec31ec98fc70",
+      "colorsSHA256": "2aaff69d09f806b9fa57ec724e983390f894e73758be8277ebcaa36da538861c"
+    },
+    "Rose Pine Dawn": {
+      "license": "MIT",
+      "repository": "https://github.com/rose-pine/build",
+      "licenseRevision": "1111ed6c610e13eeec99a5112aa937942f663b1d",
+      "licenseFile": "LICENSES/rose-pine--build-MIT.txt",
+      "licenseSHA256": "0e691132d5d92a848a1688b90fd4c662f62f78f3bd550ba46826ec31ec98fc70",
+      "colorsSHA256": "a6ec0bc7ed30eaeb64ecf5d0c26791014d6a17fed49dfe3e9449bccea0cbe488"
+    },
+    "Rose Pine Moon": {
+      "license": "MIT",
+      "repository": "https://github.com/rose-pine/build",
+      "licenseRevision": "1111ed6c610e13eeec99a5112aa937942f663b1d",
+      "licenseFile": "LICENSES/rose-pine--build-MIT.txt",
+      "licenseSHA256": "0e691132d5d92a848a1688b90fd4c662f62f78f3bd550ba46826ec31ec98fc70",
+      "colorsSHA256": "e1909a45e3e540d1b31175c3f908a62def8c9230bbd8f5150798c68aeb38bc15"
+    },
+    "Kanagawa Dragon": {
+      "license": "MIT",
+      "repository": "https://github.com/rebelot/kanagawa.nvim",
+      "licenseRevision": "bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3",
+      "licenseFile": "LICENSES/rebelot--kanagawa.nvim-MIT.txt",
+      "licenseSHA256": "dfce81e2e5bf5b5b1b440269abc551ddf96a673be9fdf64f082d5802787a4b04",
+      "colorsSHA256": "fd404e38f1ec0777420e8093da42b921bef2c090dedd3f7a16777a894207548d"
+    },
+    "Kanagawa Wave": {
+      "license": "MIT",
+      "repository": "https://github.com/rebelot/kanagawa.nvim",
+      "licenseRevision": "bb85e4bfc8d89b0e62c8fa53ccdd13d12e2f77b3",
+      "licenseFile": "LICENSES/rebelot--kanagawa.nvim-MIT.txt",
+      "licenseSHA256": "dfce81e2e5bf5b5b1b440269abc551ddf96a673be9fdf64f082d5802787a4b04",
+      "colorsSHA256": "00bca878b2fd4434b0cec1238433b2447981c32442527ef01b344ce2b76ed3cd"
+    },
+    "Flexoki Dark": {
+      "license": "MIT",
+      "repository": "https://github.com/kepano/flexoki",
+      "licenseRevision": "8d723bac4a9ac46adfdf99d42155286977aac72a",
+      "licenseFile": "LICENSES/kepano--flexoki-MIT.txt",
+      "licenseSHA256": "b0aeda2f9ebf5e09c6bfbf9323813ebeaedeabcc8cb441323c9f47aef9b05ba3",
+      "colorsSHA256": "c9c3cf495f79f969176c7dc92150296e5c6b74adcd1121285b378d18b7b61868"
+    },
+    "Flexoki Light": {
+      "license": "MIT",
+      "repository": "https://github.com/kepano/flexoki",
+      "licenseRevision": "8d723bac4a9ac46adfdf99d42155286977aac72a",
+      "licenseFile": "LICENSES/kepano--flexoki-MIT.txt",
+      "licenseSHA256": "b0aeda2f9ebf5e09c6bfbf9323813ebeaedeabcc8cb441323c9f47aef9b05ba3",
+      "colorsSHA256": "93218e79ae6ac4cf26be97e0220fdd2896ba07daee0b0739defde3af88452a7e"
+    },
+    "One Half Dark": {
+      "license": "MIT",
+      "repository": "https://github.com/sonph/onehalf",
+      "licenseRevision": "75eb2e97acd74660779fed8380989ee7891eec56",
+      "licenseFile": "LICENSES/sonph--onehalf-MIT.txt",
+      "licenseSHA256": "bb4a23db094e79ed8ffd9a38fbc6ff45cbdf9a1f4182fc7ff2667793a012c9a1",
+      "colorsSHA256": "66368d73dd7cdbe3dbe447e26124752540beb900e07cbfc67805082f03e88fc8"
+    },
+    "One Half Light": {
+      "license": "MIT",
+      "repository": "https://github.com/sonph/onehalf",
+      "licenseRevision": "75eb2e97acd74660779fed8380989ee7891eec56",
+      "licenseFile": "LICENSES/sonph--onehalf-MIT.txt",
+      "licenseSHA256": "bb4a23db094e79ed8ffd9a38fbc6ff45cbdf9a1f4182fc7ff2667793a012c9a1",
+      "colorsSHA256": "a00f324bb469c3aa5853704d1014871bbb1e574e3c979ba674e2c16a868044de"
+    },
+    "Tomorrow": {
+      "license": "MIT",
+      "repository": "https://github.com/chriskempson/tomorrow-theme",
+      "licenseRevision": "ccf6666d888198d341b26b3a99d0bc96500ad503",
+      "licenseFile": "LICENSES/chriskempson--tomorrow-theme-MIT.txt",
+      "licenseSHA256": "a9773fd575f48ea3648b54eeaf09d1512a9f0c7c20d284dc3f8295bd92123bf9",
+      "colorsSHA256": "9a1fd400cdd1ddba0d1f484bde76d7a0ccd27113a4bc5fe60cd6c98f62c93f74"
+    },
+    "Tomorrow Night": {
+      "license": "MIT",
+      "repository": "https://github.com/chriskempson/tomorrow-theme",
+      "licenseRevision": "ccf6666d888198d341b26b3a99d0bc96500ad503",
+      "licenseFile": "LICENSES/chriskempson--tomorrow-theme-MIT.txt",
+      "licenseSHA256": "a9773fd575f48ea3648b54eeaf09d1512a9f0c7c20d284dc3f8295bd92123bf9",
+      "colorsSHA256": "c742e6d6dbe507cdd3ec739c6670b3b1efe8b2c3a988898a51b0bb4491ab2f14"
+    },
+    "Tomorrow Night Blue": {
+      "license": "MIT",
+      "repository": "https://github.com/chriskempson/tomorrow-theme",
+      "licenseRevision": "ccf6666d888198d341b26b3a99d0bc96500ad503",
+      "licenseFile": "LICENSES/chriskempson--tomorrow-theme-MIT.txt",
+      "licenseSHA256": "a9773fd575f48ea3648b54eeaf09d1512a9f0c7c20d284dc3f8295bd92123bf9",
+      "colorsSHA256": "7e93296286a1ee497e87847142bd22302e8d78a9045ae0f60ad5c42a2f85e058"
+    },
+    "Tomorrow Night Bright": {
+      "license": "MIT",
+      "repository": "https://github.com/chriskempson/tomorrow-theme",
+      "licenseRevision": "ccf6666d888198d341b26b3a99d0bc96500ad503",
+      "licenseFile": "LICENSES/chriskempson--tomorrow-theme-MIT.txt",
+      "licenseSHA256": "a9773fd575f48ea3648b54eeaf09d1512a9f0c7c20d284dc3f8295bd92123bf9",
+      "colorsSHA256": "f195945ea564cc18915371c17ec86d8024789d55406bb3bdd5a379540d06e089"
+    },
+    "Tomorrow Night Eighties": {
+      "license": "MIT",
+      "repository": "https://github.com/chriskempson/tomorrow-theme",
+      "licenseRevision": "ccf6666d888198d341b26b3a99d0bc96500ad503",
+      "licenseFile": "LICENSES/chriskempson--tomorrow-theme-MIT.txt",
+      "licenseSHA256": "a9773fd575f48ea3648b54eeaf09d1512a9f0c7c20d284dc3f8295bd92123bf9",
+      "colorsSHA256": "eb28f54cdd63965a517859a77dcd7047aab29f62c16d7725e64a9a89195ce8aa"
+    },
+    "Iceberg Dark": {
+      "license": "MIT",
+      "repository": "https://github.com/cocopon/iceberg.vim",
+      "licenseRevision": "23835d5ed696436f716cbfdb56a93a7850fe3b18",
+      "licenseFile": "LICENSES/cocopon--iceberg.vim-MIT.txt",
+      "licenseSHA256": "2a097c66a9be7645245c475e41afd60e646a769589f728e0184cca3127a67486",
+      "colorsSHA256": "8e6240fc28d1aedac70762ddb6ef08a6b7065e6714bc638eca3b6cbef6666b2f"
+    },
+    "Iceberg Light": {
+      "license": "MIT",
+      "repository": "https://github.com/cocopon/iceberg.vim",
+      "licenseRevision": "23835d5ed696436f716cbfdb56a93a7850fe3b18",
+      "licenseFile": "LICENSES/cocopon--iceberg.vim-MIT.txt",
+      "licenseSHA256": "2a097c66a9be7645245c475e41afd60e646a769589f728e0184cca3127a67486",
+      "colorsSHA256": "a7b5bb509c93819d85a6f60a0b35188a9e1b4d5d0d1b6b0e0b74dd63bc56c3ab"
+    },
+    "Snazzy": {
+      "license": "MIT",
+      "repository": "https://github.com/sindresorhus/iterm2-snazzy",
+      "licenseRevision": "27b3156992a87ccb36c44448592e85da70f61acc",
+      "licenseFile": "LICENSES/sindresorhus--iterm2-snazzy-MIT.txt",
+      "licenseSHA256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3",
+      "colorsSHA256": "24b5f19b5dec4a075685da8f8afa81fbe6649b0dcfb05238fcca753e9c1576fc"
+    },
+    "Vesper": {
+      "license": "MIT",
+      "repository": "https://github.com/raunofreiberg/vesper",
+      "licenseRevision": "9043f3849b776949445f0cd4990365959cca35a3",
+      "licenseFile": "LICENSES/raunofreiberg--vesper-MIT.txt",
+      "licenseSHA256": "c44ea9c10305dd82182e64c1431b678871562150a1439ccdb9484728dd536099",
+      "colorsSHA256": "e5129e9a9fac2980c2a049768a88a1d3f60236fd1c4a922be9da37c3c13b9f00"
+    },
+    "Dark Modern": {
+      "license": "MIT",
+      "repository": "https://github.com/microsoft/vscode",
+      "licenseRevision": "ed40651055dc41f4cc669f33016b7724b78bb3b4",
+      "licenseFile": "LICENSES/microsoft--vscode-MIT.txt",
+      "licenseSHA256": "9480271317925265e806a9a196aaa33410a962fa9d4d1e248a4a5187bc8c9df9",
+      "colorsSHA256": "6e20b8773cd2af523e867d0d1d7f445bad09f57e0ef94e2983ea5bec8e510c04"
+    },
+    "Dark+": {
+      "license": "MIT",
+      "repository": "https://github.com/microsoft/vscode",
+      "licenseRevision": "ed40651055dc41f4cc669f33016b7724b78bb3b4",
+      "licenseFile": "LICENSES/microsoft--vscode-MIT.txt",
+      "licenseSHA256": "9480271317925265e806a9a196aaa33410a962fa9d4d1e248a4a5187bc8c9df9",
+      "colorsSHA256": "3e9530a6f1f1681e2f488471ff5ec06ab418800735b0626ea97e367461f42138"
+    },
+    "GitHub Dark": {
+      "license": "MIT",
+      "repository": "https://github.com/primer/github-vscode-theme",
+      "licenseRevision": "cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf",
+      "licenseFile": "LICENSES/primer--github-vscode-theme-MIT.txt",
+      "licenseSHA256": "e2c871bb6effe9f6ec8d94d6596db33c4bfe4dd94969a6a9a2fb0473ebe6442e",
+      "colorsSHA256": "51b83bd9d1214a46a82f97804a8c7575269358152765aa0acd3edca45779464b"
+    },
+    "GitHub Dark Colorblind": {
+      "license": "MIT",
+      "repository": "https://github.com/primer/github-vscode-theme",
+      "licenseRevision": "cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf",
+      "licenseFile": "LICENSES/primer--github-vscode-theme-MIT.txt",
+      "licenseSHA256": "e2c871bb6effe9f6ec8d94d6596db33c4bfe4dd94969a6a9a2fb0473ebe6442e",
+      "colorsSHA256": "9e1c6b0cdd5e229d1de8b02446657d25c2bb2ef70d33be4dc92cae608a20a127"
+    },
+    "GitHub Dark Default": {
+      "license": "MIT",
+      "repository": "https://github.com/primer/github-vscode-theme",
+      "licenseRevision": "cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf",
+      "licenseFile": "LICENSES/primer--github-vscode-theme-MIT.txt",
+      "licenseSHA256": "e2c871bb6effe9f6ec8d94d6596db33c4bfe4dd94969a6a9a2fb0473ebe6442e",
+      "colorsSHA256": "22670d3fa0dc42989d96550b4d3198975a61a2d4441cd7b508614a2a985f641f"
+    },
+    "GitHub Dark Dimmed": {
+      "license": "MIT",
+      "repository": "https://github.com/primer/github-vscode-theme",
+      "licenseRevision": "cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf",
+      "licenseFile": "LICENSES/primer--github-vscode-theme-MIT.txt",
+      "licenseSHA256": "e2c871bb6effe9f6ec8d94d6596db33c4bfe4dd94969a6a9a2fb0473ebe6442e",
+      "colorsSHA256": "35239c58e99e407f8bae38ee5bf4cf9bbeebb49851d0f76e4e17162ecfb50ff6"
+    },
+    "GitHub Dark High Contrast": {
+      "license": "MIT",
+      "repository": "https://github.com/primer/github-vscode-theme",
+      "licenseRevision": "cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf",
+      "licenseFile": "LICENSES/primer--github-vscode-theme-MIT.txt",
+      "licenseSHA256": "e2c871bb6effe9f6ec8d94d6596db33c4bfe4dd94969a6a9a2fb0473ebe6442e",
+      "colorsSHA256": "174e065b413588e66bae63588a599930df2e36a37ea950bcf1390f4c91c5f997"
+    },
+    "GitHub Light Colorblind": {
+      "license": "MIT",
+      "repository": "https://github.com/primer/github-vscode-theme",
+      "licenseRevision": "cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf",
+      "licenseFile": "LICENSES/primer--github-vscode-theme-MIT.txt",
+      "licenseSHA256": "e2c871bb6effe9f6ec8d94d6596db33c4bfe4dd94969a6a9a2fb0473ebe6442e",
+      "colorsSHA256": "637ba5543ac472f01e60b41146f838d7781949b90676c874ae4e45651226e612"
+    },
+    "GitHub Light Default": {
+      "license": "MIT",
+      "repository": "https://github.com/primer/github-vscode-theme",
+      "licenseRevision": "cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf",
+      "licenseFile": "LICENSES/primer--github-vscode-theme-MIT.txt",
+      "licenseSHA256": "e2c871bb6effe9f6ec8d94d6596db33c4bfe4dd94969a6a9a2fb0473ebe6442e",
+      "colorsSHA256": "db4a70cd1475853a5329183c27c5e0dce71f295ecfb47dd99ce253f51b67223a"
+    },
+    "GitHub Light High Contrast": {
+      "license": "MIT",
+      "repository": "https://github.com/primer/github-vscode-theme",
+      "licenseRevision": "cd78e5e4e7bcf132a6f428ae0f32264bb1b729cf",
+      "licenseFile": "LICENSES/primer--github-vscode-theme-MIT.txt",
+      "licenseSHA256": "e2c871bb6effe9f6ec8d94d6596db33c4bfe4dd94969a6a9a2fb0473ebe6442e",
+      "colorsSHA256": "7b5d29b887f344d7f304008918935aaab7598db8dab9866af66ea758a22a823a"
+    }
+  }
+}

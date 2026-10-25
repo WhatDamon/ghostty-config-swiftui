@@ -1,0 +1,22 @@
+Ghostty Config — Unofficial SwiftUI Port
+
+Based on Ghostty Config by Zerebos
+Copyright 2024 Zerebos
+https://github.com/zerebos/ghostty-config
+Licensed under the Apache License, Version 2.0. The original LICENSE is retained.
+
+Unofficial native macOS / SwiftUI port and modifications:
+Copyright 2026 Damon Lu (@WhatDamon)
+Project repository: https://github.com/WhatDamon/ghostty-config-swiftui
+
+This is an independent port. It is not an official release of the upstream
+Ghostty Config project or the Ghostty terminal project, and does not imply
+endorsement by their authors. Third-party names and artwork identify their
+respective projects and preview the configuration being edited.
+
+Changes include SwiftUI/AppKit UI, configuration parsing and storage, theme
+layering, navigation, native editors, and a reviewed subset of offline themes.
+Upstream code/data and artwork retain their own copyright and license notices.
+See THIRD_PARTY_NOTICES.md, LICENSES/, and the application's Licenses & Credits.
+
+This NOTICE is informational and does not modify any license terms.
