@@ -7,6 +7,20 @@ import SwiftUI
 // MARK: - App Delegate
 
 class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        // AppKit can insert its own full-screen command independently of
+        // SwiftUI's command groups, even for windows that cannot go full screen.
+        for name in [NSMenu.didAddItemNotification, NSMenu.didChangeItemNotification] {
+            NotificationCenter.default.addObserver(self, selector: #selector(menuItemsChanged(_:)), name: name, object: nil)
+        }
+        if let menu = NSApp.mainMenu { AppWindowConfiguration.hideFullScreenCommands(in: menu) }
+    }
+
+    @objc private func menuItemsChanged(_ notification: Notification) {
+        guard let menu = notification.object as? NSMenu else { return }
+        AppWindowConfiguration.hideFullScreenCommands(in: menu)
+    }
+
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         true
     }
@@ -30,6 +44,7 @@ struct GhosttyConfigApp: App {
                 .environment(\.toastService, toastService)
                 .frame(minWidth: 900, minHeight: 600)
                 .background(AppWindowConfiguration())
+                .modifier(AppWindowInteractionPolicy())
                 .sheet(isPresented: $showLegalNotices) { LegalNoticesView() }
         }
         .windowResizability(.contentSize)
