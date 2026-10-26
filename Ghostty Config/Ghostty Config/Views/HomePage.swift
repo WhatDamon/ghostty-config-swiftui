@@ -93,7 +93,6 @@ struct HomePage: View {
                 RoadmapRow("Command palette builder")
                 RoadmapRow("Remember unfinished configuration between launches")
                 RoadmapRow("Optional GTK and Linux configuration pages")
-                RoadmapRow("Native configuration file integration")
                 RoadmapRow("Broader macOS version and accessibility testing")
             }
             .frame(maxWidth: .infinity, alignment: .leading)

@@ -11,10 +11,19 @@ import Observation
 final class ConfigService {
     nonisolated deinit {}
 
+    struct ConfigState: Equatable {
+        let values: [String: ConfigValue]
+        let explicitColors: Set<String>
+        let paletteOverrides: [Int: String]
+        let explicitKeys: Set<String>
+        let directives: [String: ConfigValue]
+    }
+
     private(set) var config: [String: ConfigValue]
     private let defaults: [String: ConfigValue]
     private(set) var explicitColors = Set<ConfigKey>()
     private(set) var paletteOverrides: [Int: String] = [:]
+    private(set) var explicitKeys = Set<String>()
     var pendingImportText: String?
     var previewMode: PreviewMode = .system
     var systemIsLight = false
@@ -27,6 +36,26 @@ final class ConfigService {
         config = values
     }
 
+    func snapshot() -> ConfigState {
+        var directives = diff()
+        for key in explicitKeys where directives[key] == nil {
+            let configKey = ConfigKey(rawValue: kebabFromCamel(key))
+            if configKey != .palette { directives[key] = config[key] }
+        }
+        if explicitKeys.contains("keybind") || config["keybind"] != defaults["keybind"] {
+            let bindings = array(for: .keybind)
+            directives["keybind"] = .list(bindings.first == "clear" ? bindings : ["clear"] + bindings)
+        }
+        return ConfigState(values: config, explicitColors: Set(explicitColors.map(\.camelCase)), paletteOverrides: paletteOverrides, explicitKeys: explicitKeys, directives: directives)
+    }
+
+    func resetToDefaults() {
+        config = defaults
+        explicitColors.removeAll()
+        paletteOverrides.removeAll()
+        explicitKeys.removeAll()
+    }
+
     func string(for key: ConfigKey) -> String { config[key.camelCase]?.text ?? "" }
     func bool(for key: ConfigKey) -> Bool { string(for: key) == "true" }
     func double(for key: ConfigKey) -> Double { Double(string(for: key)) ?? 0 }
@@ -37,12 +66,14 @@ final class ConfigService {
     }
 
     func set(_ values: [String], for key: ConfigKey) {
+        explicitKeys.insert(key.camelCase)
         if key == .palette {
             let previous = array(for: key)
             for (index, color) in values.enumerated() where index < 256 && (index >= previous.count || color != previous[index]) { setPalette(color, at: index) }
         } else { config[key.camelCase] = .list(values) }
     }
     func setString(_ value: String, for key: ConfigKey) {
+        explicitKeys.insert(key.camelCase)
         config[key.camelCase] = PanelRegistry.definitions[key]?.repeatable == true ? .list(value.components(separatedBy: "\n")) : .scalar(value)
         if Self.schemeKeys.contains(key) { explicitColors.insert(key) }
     }
@@ -56,6 +87,7 @@ final class ConfigService {
         return config[key.camelCase] != defaults[key.camelCase]
     }
     func resetSetting(_ key: ConfigKey) {
+        explicitKeys.remove(key.camelCase)
         config[key.camelCase] = defaults[key.camelCase]
         explicitColors.remove(key)
         if key == .palette { paletteOverrides = [:] }
@@ -93,6 +125,7 @@ final class ConfigService {
         guard (0..<256).contains(index) else { return }
         let normalized = ColorValue(hex: color)?.hexString ?? color
         paletteOverrides[index] = normalized
+        explicitKeys.insert(ConfigKey.palette.camelCase)
         var values = array(for: .palette)
         values[index] = normalized
         config[ConfigKey.palette.camelCase] = .list(values)
@@ -155,6 +188,7 @@ final class ConfigService {
 
     func load(parsed: [String: ConfigValue]) {
         for (key, value) in parsed {
+            explicitKeys.insert(key)
             let configKey = ConfigKey(rawValue: kebabFromCamel(key))
             if configKey == .keybind {
                 let incoming = value.entries

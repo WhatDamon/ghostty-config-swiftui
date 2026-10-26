@@ -7,9 +7,13 @@ import SwiftUI
 struct SettingItemView: View {
     let setting: SettingItem
     @Environment(\.configService) private var configService
+    @Environment(\.localConfigService) private var local
     @State private var showHelp = false
 
     private var isExpanded: Bool { setting.type == .palette || setting.type == .keybinds }
+    private var canReset: Bool {
+        configService.isNonDefault(setting.configKey) || (local.isConnected && configService.explicitKeys.contains(setting.configKey.camelCase))
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -44,7 +48,7 @@ struct SettingItemView: View {
         }
         .padding(12)
         .contextMenu {
-            if configService.isNonDefault(setting.configKey) {
+            if canReset {
                 Button("Follow theme or default") { configService.resetSetting(setting.configKey) }
             }
         }
@@ -78,7 +82,7 @@ struct SettingItemView: View {
                     .foregroundStyle(.secondary)
                 }
             }
-            if configService.isNonDefault(setting.configKey) {
+            if canReset {
                 Button { configService.resetSetting(setting.configKey) } label: {
                     Image(systemName: "arrow.uturn.backward")
                 }

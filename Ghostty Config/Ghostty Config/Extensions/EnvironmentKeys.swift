@@ -9,4 +9,5 @@ import SwiftUI
 extension EnvironmentValues {
     @Entry var configService: ConfigService = ConfigService()
     @Entry var toastService: ToastService = ToastService()
+    @Entry var localConfigService: LocalConfigService = LocalConfigService()
 }

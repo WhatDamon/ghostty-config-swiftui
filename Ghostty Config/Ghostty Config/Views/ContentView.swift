@@ -11,9 +11,11 @@ struct ContentView: View {
     @Environment(\.configService) private var configService
     @Environment(\.toastService) private var toastService
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.localConfigService) private var local
     @State private var searchQuery = ""
     private var searchResults: [SearchResult] { matchingSettings(query: searchQuery) }
     @State private var focusTarget: SettingFocus?
+    @State private var showOriginalFile = false
 
     private let panels = PanelRegistry.all
 
@@ -34,6 +36,7 @@ struct ContentView: View {
         case "home": "Ghostty Config"
         case "import-export": "Import & Export"
         case "font-playground": "Font Playground"
+        case "local-config": "Local Config"
         default: panels.first { $0.panelId == selectedPanel }?.name ?? "Ghostty Config"
         }
     }
@@ -54,6 +57,17 @@ struct ContentView: View {
             .toolbar(removing: .sidebarToggle)
         } detail: {
             DetailView(selectedPanel: selectedPanel, panels: panels, focusTarget: focusTarget)
+                .safeAreaInset(edge: .bottom, spacing: 0) {
+                    if local.isConnected {
+                        HStack {
+                            Label(local.fileURL?.lastPathComponent ?? "Local Config", systemImage: "doc.text")
+                            Text(local.hasUnsavedChanges ? "Unsaved changes" : "Saved").foregroundStyle(.secondary)
+                            Spacer()
+                            Button("Manage…") { navigate(to: NavigationDestination(panelID: "local-config")) }
+                            Button("Save") { local.save() }.disabled(!local.hasUnsavedChanges && local.snapshot?.existed == true)
+                        }.font(.callout).padding(10).background(.bar)
+                    }
+                }
                 .toolbar {
                     ToolbarItemGroup(placement: .navigation) {
                         Button(action: goBack) {
@@ -92,6 +106,27 @@ struct ContentView: View {
         .onChange(of: colorScheme, initial: true) { _, scheme in configService.systemIsLight = scheme == .light }
         .overlay(alignment: .bottom) {
             ToastStack()
+        }
+        .alert("Configuration Operation Failed", isPresented: Binding(get: { local.errorMessage != nil }, set: { if !$0 { local.errorMessage = nil } })) {
+            Button("OK") { local.errorMessage = nil }
+        } message: { Text(local.errorMessage ?? "") }
+        .alert("Configuration Changed on Disk", isPresented: Binding(get: { local.conflictMessage != nil }, set: { if !$0 { local.conflictMessage = nil } })) {
+            Button("Reload and Review…") { local.conflictMessage = nil; local.reload() }
+            Button("Keep Editing", role: .cancel) { local.conflictMessage = nil }
+        } message: { Text(local.conflictMessage ?? "") }
+        .sheet(isPresented: Binding(get: { local.reviewText != nil }, set: { if !$0 { local.reviewText = nil } })) {
+            VStack(alignment: .leading, spacing: 16) {
+                Text(local.reviewTitle).font(.title2.bold())
+                Picker("Version", selection: $showOriginalFile) {
+                    Text("Loaded File").tag(true)
+                    Text("Preview").tag(false)
+                }.pickerStyle(.segmented)
+                ScrollView([.horizontal, .vertical]) {
+                    Text((showOriginalFile ? local.reviewOriginalText : local.reviewText) ?? "").font(.body.monospaced()).textSelection(.enabled)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }.frame(minHeight: 320)
+                HStack { Spacer(); Button("Close") { local.reviewText = nil }.keyboardShortcut(.cancelAction) }
+            }.padding(24).frame(width: 720, height: 520)
         }
     }
 
@@ -186,6 +221,7 @@ private struct SidebarView: View {
                 }
                 Section("Tools") {
                     sidebarRow(title: "Import & Export", icon: "arrow.triangle.2.circlepath", tag: "import-export")
+                    sidebarRow(title: "Local Config", icon: "externaldrive", tag: "local-config")
                     sidebarRow(title: "Font Playground", icon: "textformat", tag: "font-playground")
                 }
                 Section("Links") {
@@ -252,6 +288,8 @@ private struct DetailView: View {
             HomePage()
         case "import-export":
             ImportExportPage()
+        case "local-config":
+            LocalConfigPage()
         case "font-playground":
             FontPlaygroundPage()
         case let panelId?:
