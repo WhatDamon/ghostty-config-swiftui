@@ -72,10 +72,12 @@ struct ContentView: View {
                         .keyboardShortcut("]", modifiers: .command)
                         .accessibilityIdentifier("navigation-forward")
                     }
-                    ToolbarItem(placement: .navigation) {
-                        Text(pageTitle)
-                            .font(.headline)
-                            .accessibilityAddTraits(.isHeader)
+                    if #available(macOS 26.0, *) {
+                        // The page title is a heading, separate from the glass
+                        // background shared by the Back and Forward controls.
+                        pageTitleToolbarItem.sharedBackgroundVisibility(.hidden)
+                    } else {
+                        pageTitleToolbarItem
                     }
                 }
         }
@@ -90,6 +92,14 @@ struct ContentView: View {
         .onChange(of: colorScheme, initial: true) { _, scheme in configService.systemIsLight = scheme == .light }
         .overlay(alignment: .bottom) {
             ToastStack()
+        }
+    }
+
+    private var pageTitleToolbarItem: some ToolbarContent {
+        ToolbarItem(placement: .navigation) {
+            Text(pageTitle)
+                .font(.headline)
+                .accessibilityAddTraits(.isHeader)
         }
     }
 
